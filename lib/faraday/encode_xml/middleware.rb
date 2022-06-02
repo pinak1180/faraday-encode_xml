@@ -15,9 +15,7 @@ module Faraday
       CONTENT_TYPE = 'Content-Type'
       MIME_TYPE    = 'application/xml'
 
-      dependency do
-        require 'gyoku' unless defined?(::Gyoku)
-      end
+     
 
       # This method will be called when the request is being prepared.
       # You can alter it as you like, accessing things like request_body, request_headers, and more.
