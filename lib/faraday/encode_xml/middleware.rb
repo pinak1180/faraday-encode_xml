@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'faraday'
-require 'gyoku'
 
 module Faraday
   module EncodeXML
@@ -33,7 +32,7 @@ module Faraday
       private
 
       def encode(data)
-        Gyoku.xml(data, key_converter: :none)
+        data
       end
 
       def match_content_type(env)
